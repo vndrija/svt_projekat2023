@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "svtkvt-projekat": {
+    "projekat_svtkvt": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/svtkvt-projekat",
+            "outputPath": "dist/projekat_svtkvt",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,7 +25,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -61,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "svtkvt-projekat:build:production"
+              "browserTarget": "projekat_svtkvt:build:production"
             },
             "development": {
-              "browserTarget": "svtkvt-projekat:build:development"
+              "browserTarget": "projekat_svtkvt:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "svtkvt-projekat:build"
+            "browserTarget": "projekat_svtkvt:build"
           }
         },
         "test": {
